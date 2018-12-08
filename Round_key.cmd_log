@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/GD/Documents/Xilinx/AES/Round_key.xst" -ofn "C:/Users/GD/Documents/Xilinx/AES/Round_key.syr" 
+xst -intstyle ise -ifn "C:/Users/GD/Documents/Xilinx/AES/Round_key.xst" -ofn "C:/Users/GD/Documents/Xilinx/AES/Round_key.syr" 

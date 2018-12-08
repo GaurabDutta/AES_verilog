@@ -1,0 +1,6 @@
+verilog work "S_Box.v"
+verilog work "ShiftRows.v"
+verilog work "Round_key.v"
+verilog work "MixCol.v"
+verilog work "Key_schedule.v"
+verilog work "AES.v"

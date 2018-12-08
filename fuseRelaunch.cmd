@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/GD/Documents/Xilinx/AES/AES_tb_isim_beh.exe" -prj "C:/Users/GD/Documents/Xilinx/AES/AES_tb_beh.prj" "work.AES_tb" "work.glbl" 

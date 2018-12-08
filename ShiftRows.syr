@@ -1,0 +1,487 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: ShiftRows.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ShiftRows.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ShiftRows"
+Output Format                      : NGC
+Target Device                      : xc3s50a-4-tq144
+
+---- Source Options
+Top Module Name                    : ShiftRows
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ShiftRows.v" in library work
+Module <ShiftRows> compiled
+No errors in compilation
+Analysis of file <"ShiftRows.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <ShiftRows> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <ShiftRows>.
+Module <ShiftRows> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ShiftRows>.
+    Related source file is "ShiftRows.v".
+    Found 128-bit register for signal <out>.
+    Found 128-bit register for signal <row>.
+    Summary:
+	inferred 256 D-type flip-flop(s).
+Unit <ShiftRows> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 132
+ 1-bit register                                        : 128
+ 32-bit register                                       : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 256
+ Flip-Flops                                            : 256
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <row_0_0> in Unit <ShiftRows> is equivalent to the following FF/Latch, which will be removed : <row_1_16> 
+INFO:Xst:2261 - The FF/Latch <row_0_1> in Unit <ShiftRows> is equivalent to the following FF/Latch, which will be removed : <row_1_17> 
+INFO:Xst:2261 - The FF/Latch <row_0_2> in Unit <ShiftRows> is equivalent to the following FF/Latch, which will be removed : <row_1_18> 
+INFO:Xst:2261 - The FF/Latch <out_80> in Unit <ShiftRows> is equivalent to the following FF/Latch, which will be removed : <out_24> 
+INFO:Xst:2261 - The FF/Latch <out_81> in Unit <ShiftRows> is equivalent to the following FF/Latch, which will be removed : <out_25> 
+INFO:Xst:2261 - The FF/Latch <out_82> in Unit <ShiftRows> is equivalent to the following FF/Latch, which will be removed : <out_26> 
+
+Optimizing unit <ShiftRows> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ShiftRows, actual ratio is 20.
+
+Final Macro Processing ...
+
+Processing Unit <ShiftRows> :
+	Found 2-bit shift register for signal <out_127>.
+	Found 2-bit shift register for signal <out_126>.
+	Found 2-bit shift register for signal <out_125>.
+	Found 2-bit shift register for signal <out_124>.
+	Found 2-bit shift register for signal <out_123>.
+	Found 2-bit shift register for signal <out_122>.
+	Found 2-bit shift register for signal <out_121>.
+	Found 2-bit shift register for signal <out_120>.
+	Found 2-bit shift register for signal <out_119>.
+	Found 2-bit shift register for signal <out_118>.
+	Found 2-bit shift register for signal <out_117>.
+	Found 2-bit shift register for signal <out_116>.
+	Found 2-bit shift register for signal <out_115>.
+	Found 2-bit shift register for signal <out_114>.
+	Found 2-bit shift register for signal <out_113>.
+	Found 2-bit shift register for signal <out_112>.
+	Found 2-bit shift register for signal <out_111>.
+	Found 2-bit shift register for signal <out_110>.
+	Found 2-bit shift register for signal <out_109>.
+	Found 2-bit shift register for signal <out_108>.
+	Found 2-bit shift register for signal <out_107>.
+	Found 2-bit shift register for signal <out_106>.
+	Found 2-bit shift register for signal <out_105>.
+	Found 2-bit shift register for signal <out_104>.
+	Found 2-bit shift register for signal <out_103>.
+	Found 2-bit shift register for signal <out_102>.
+	Found 2-bit shift register for signal <out_101>.
+	Found 2-bit shift register for signal <out_100>.
+	Found 2-bit shift register for signal <out_99>.
+	Found 2-bit shift register for signal <out_96>.
+	Found 2-bit shift register for signal <out_98>.
+	Found 2-bit shift register for signal <out_97>.
+	Found 2-bit shift register for signal <out_95>.
+	Found 2-bit shift register for signal <out_94>.
+	Found 2-bit shift register for signal <out_93>.
+	Found 2-bit shift register for signal <out_92>.
+	Found 2-bit shift register for signal <out_91>.
+	Found 2-bit shift register for signal <out_90>.
+	Found 2-bit shift register for signal <out_89>.
+	Found 2-bit shift register for signal <out_88>.
+	Found 2-bit shift register for signal <out_87>.
+	Found 2-bit shift register for signal <out_86>.
+	Found 2-bit shift register for signal <out_85>.
+	Found 2-bit shift register for signal <out_84>.
+	Found 2-bit shift register for signal <out_83>.
+	Found 2-bit shift register for signal <out_82>.
+	Found 2-bit shift register for signal <out_81>.
+	Found 2-bit shift register for signal <out_80>.
+	Found 2-bit shift register for signal <out_79>.
+	Found 2-bit shift register for signal <out_78>.
+	Found 2-bit shift register for signal <out_77>.
+	Found 2-bit shift register for signal <out_76>.
+	Found 2-bit shift register for signal <out_75>.
+	Found 2-bit shift register for signal <out_74>.
+	Found 2-bit shift register for signal <out_73>.
+	Found 2-bit shift register for signal <out_72>.
+	Found 2-bit shift register for signal <out_71>.
+	Found 2-bit shift register for signal <out_70>.
+	Found 2-bit shift register for signal <out_69>.
+	Found 2-bit shift register for signal <out_68>.
+	Found 2-bit shift register for signal <out_67>.
+	Found 2-bit shift register for signal <out_66>.
+	Found 2-bit shift register for signal <out_63>.
+	Found 2-bit shift register for signal <out_65>.
+	Found 2-bit shift register for signal <out_64>.
+	Found 2-bit shift register for signal <out_62>.
+	Found 2-bit shift register for signal <out_61>.
+	Found 2-bit shift register for signal <out_60>.
+	Found 2-bit shift register for signal <out_59>.
+	Found 2-bit shift register for signal <out_58>.
+	Found 2-bit shift register for signal <out_57>.
+	Found 2-bit shift register for signal <out_56>.
+	Found 2-bit shift register for signal <out_55>.
+	Found 2-bit shift register for signal <out_54>.
+	Found 2-bit shift register for signal <out_53>.
+	Found 2-bit shift register for signal <out_52>.
+	Found 2-bit shift register for signal <out_51>.
+	Found 2-bit shift register for signal <out_50>.
+	Found 2-bit shift register for signal <out_49>.
+	Found 2-bit shift register for signal <out_48>.
+	Found 2-bit shift register for signal <out_47>.
+	Found 2-bit shift register for signal <out_46>.
+	Found 2-bit shift register for signal <out_45>.
+	Found 2-bit shift register for signal <out_44>.
+	Found 2-bit shift register for signal <out_43>.
+	Found 2-bit shift register for signal <out_42>.
+	Found 2-bit shift register for signal <out_41>.
+	Found 2-bit shift register for signal <out_40>.
+	Found 2-bit shift register for signal <out_39>.
+	Found 2-bit shift register for signal <out_38>.
+	Found 2-bit shift register for signal <out_37>.
+	Found 2-bit shift register for signal <out_36>.
+	Found 2-bit shift register for signal <out_35>.
+	Found 2-bit shift register for signal <out_34>.
+	Found 2-bit shift register for signal <out_33>.
+	Found 2-bit shift register for signal <out_30>.
+	Found 2-bit shift register for signal <out_32>.
+	Found 2-bit shift register for signal <out_31>.
+	Found 2-bit shift register for signal <out_29>.
+	Found 2-bit shift register for signal <out_28>.
+	Found 2-bit shift register for signal <out_27>.
+	Found 2-bit shift register for signal <out_23>.
+	Found 2-bit shift register for signal <out_22>.
+	Found 2-bit shift register for signal <out_21>.
+	Found 2-bit shift register for signal <out_20>.
+	Found 2-bit shift register for signal <out_19>.
+	Found 2-bit shift register for signal <out_18>.
+	Found 2-bit shift register for signal <out_17>.
+	Found 2-bit shift register for signal <out_16>.
+	Found 2-bit shift register for signal <out_15>.
+	Found 2-bit shift register for signal <out_14>.
+	Found 2-bit shift register for signal <out_13>.
+	Found 2-bit shift register for signal <out_12>.
+	Found 2-bit shift register for signal <out_11>.
+	Found 2-bit shift register for signal <out_10>.
+	Found 2-bit shift register for signal <out_9>.
+	Found 2-bit shift register for signal <out_8>.
+	Found 2-bit shift register for signal <out_7>.
+	Found 2-bit shift register for signal <out_6>.
+	Found 2-bit shift register for signal <out_5>.
+	Found 2-bit shift register for signal <out_4>.
+	Found 2-bit shift register for signal <out_3>.
+	Found 2-bit shift register for signal <out_2>.
+	Found 2-bit shift register for signal <out_1>.
+	Found 2-bit shift register for signal <out_0>.
+Unit <ShiftRows> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Shift Registers                                      : 125
+ 2-bit shift register                                  : 125
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ShiftRows.ngr
+Top Level Output File Name         : ShiftRows
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 257
+
+Cell Usage :
+# BELS                             : 1
+#      GND                         : 1
+# FlipFlops/Latches                : 125
+#      FD                          : 125
+# Shift Registers                  : 125
+#      SRL16                       : 125
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 253
+#      IBUF                        : 125
+#      OBUF                        : 128
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-4 
+
+ Number of Slices:                       72  out of    704    10%  
+ Number of Slice Flip Flops:            125  out of   1408     8%  
+ Number of 4 input LUTs:                125  out of   1408     8%  
+    Number used as logic:                 0
+    Number used as Shift registers:     125
+ Number of IOs:                         257
+ Number of bonded IOBs:                 254  out of    108   235% (*) 
+ Number of GCLKs:                         1  out of     24     4%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 250   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.781ns (Maximum Frequency: 264.480MHz)
+   Minimum input arrival time before clock: 1.269ns
+   Maximum output required time after clock: 5.558ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.781ns (frequency: 264.480MHz)
+  Total number of paths / destination ports: 125 / 125
+-------------------------------------------------------------------------
+Delay:               3.781ns (Levels of Logic = 0)
+  Source:            Mshreg_out_127 (FF)
+  Destination:       out_127 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Mshreg_out_127 to out_127
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRL16:CLK->Q          1   3.529   0.000  Mshreg_out_127 (Mshreg_out_127)
+     FD:D                      0.252          out_127
+    ----------------------------------------
+    Total                      3.781ns (3.781ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 125 / 125
+-------------------------------------------------------------------------
+Offset:              1.269ns (Levels of Logic = 1)
+  Source:            data<127> (PAD)
+  Destination:       Mshreg_out_127 (FF)
+  Destination Clock: clk rising
+
+  Data Path: data<127> to Mshreg_out_127
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.849   0.420  data_127_IBUF (data_127_IBUF)
+     SRL16:D                  -0.064          Mshreg_out_127
+    ----------------------------------------
+    Total                      1.269ns (0.849ns logic, 0.420ns route)
+                                       (66.9% logic, 33.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 128 / 128
+-------------------------------------------------------------------------
+Offset:              5.558ns (Levels of Logic = 1)
+  Source:            out_82 (FF)
+  Destination:       out<82> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: out_82 to out<82>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  out_82 (out_82)
+     OBUF:I->O                 4.520          out_82_OBUF (out<82>)
+    ----------------------------------------
+    Total                      5.558ns (5.111ns logic, 0.447ns route)
+                                       (92.0% logic, 8.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.09 secs
+ 
+--> 
+
+Total memory usage is 4533432 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

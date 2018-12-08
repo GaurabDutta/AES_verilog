@@ -1,0 +1,28 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/GD/Documents/Xilinx/AES/AES_tb_isim_beh.exe -prj C:/Users/GD/Documents/Xilinx/AES/AES_tb_beh.prj work.AES_tb work.glbl 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/GD/Documents/Xilinx/AES/S_Box.v" into library work
+Analyzing Verilog file "C:/Users/GD/Documents/Xilinx/AES/ShiftRows.v" into library work
+Analyzing Verilog file "C:/Users/GD/Documents/Xilinx/AES/Round_key.v" into library work
+Analyzing Verilog file "C:/Users/GD/Documents/Xilinx/AES/MixCol.v" into library work
+Analyzing Verilog file "C:/Users/GD/Documents/Xilinx/AES/Key_schedule.v" into library work
+Analyzing Verilog file "C:/Users/GD/Documents/Xilinx/AES/AES.v" into library work
+Analyzing Verilog file "C:/Users/GD/Documents/Xilinx/AES/AES_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Round_key
+Compiling module S_Box
+Compiling module ShiftRows
+Compiling module MixCol
+Compiling module Key_schedule
+Compiling module AES
+Compiling module AES_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 8 Verilog Units
+Built simulation executable C:/Users/GD/Documents/Xilinx/AES/AES_tb_isim_beh.exe
+Fuse Memory Usage: 29372 KB
+Fuse CPU Usage: 687 ms

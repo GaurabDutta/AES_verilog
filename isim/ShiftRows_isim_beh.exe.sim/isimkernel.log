@@ -1,0 +1,28 @@
+Command line:
+   ShiftRows_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1807
+
+Fri Dec 07 22:33:24 2018
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5169.8 Meg
+
+ Total Signals          : 15
+ Total Nets             : 270
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 606
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 5012.52 Meg
+
+Fri Dec 07 22:34:38 2018
+

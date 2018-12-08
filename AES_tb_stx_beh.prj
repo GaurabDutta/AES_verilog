@@ -1,0 +1,8 @@
+verilog isim_temp "S_Box.v"
+verilog isim_temp "ShiftRows.v"
+verilog isim_temp "Round_key.v"
+verilog isim_temp "MixCol.v"
+verilog isim_temp "Key_schedule.v"
+verilog isim_temp "AES.v"
+verilog isim_temp "AES_tb.v"
+verilog isim_temp "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"
